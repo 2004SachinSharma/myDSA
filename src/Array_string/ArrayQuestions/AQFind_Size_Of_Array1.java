@@ -1,6 +1,6 @@
-package Array_string;
+package Array_string.ArrayQuestions;
 
-public class Question1 {
+public class AQFind_Size_Of_Array1 {
     public static void main(String[] args) {
 
 

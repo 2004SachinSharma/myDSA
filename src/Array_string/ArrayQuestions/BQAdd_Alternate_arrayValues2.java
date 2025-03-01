@@ -1,6 +1,6 @@
-package Array_string;
+package Array_string.ArrayQuestions;
 
-public class Question2 {
+public class BQAdd_Alternate_arrayValues2 {
     public static void main(String[] args) {
 
         int[] arr_numbers = {-2, -3, -4, -5, -6, -70, -8, -9, -4, -9, -1, -550};
