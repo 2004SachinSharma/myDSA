@@ -18,7 +18,7 @@ public class IQMax_1s_Maxconsecutives16 {
 
             }
         }
-        System.out.println(counti);}
+        System.out.println(counti);} // prints counti
 
 
 
