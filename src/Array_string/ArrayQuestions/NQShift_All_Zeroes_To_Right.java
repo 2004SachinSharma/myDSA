@@ -37,7 +37,7 @@ public class NQShift_All_Zeroes_To_Right {
 
         //------------Instructor's approach (this is two pointer approach)--------------------------
         int j = 0;
-        int[] arrr = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 9};
+        int[] arrr = {1,0,2,5,0,0,7,0,2,0,10,9};
         for (int i = 0; i < arrr.length; i++) {
             if (arrr[i] != 0 && arrr[j] == 0) {
                 //swapping
