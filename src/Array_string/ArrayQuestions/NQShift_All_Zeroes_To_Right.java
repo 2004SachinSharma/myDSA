@@ -1,5 +1,6 @@
 package Array_string.ArrayQuestions;
 
+import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.util.Arrays;
 
 public class NQShift_All_Zeroes_To_Right {
@@ -21,6 +22,21 @@ public class NQShift_All_Zeroes_To_Right {
        }
         System.out.println(Arrays.toString(arr));
 
+//---------------------Second_optimized_approach-------------------------------------------------------
+        int counter =0;
+        int [] ar = {0,0,0,0,0,0,0,0,0,0,10};
+        for ( int i = 0; i < ar.length; i++ ) {
+            if (ar[i] != 0) {
+                    ar[counter] =  ar[i];
+                    counter++;
+                }
+        }
+        for (int j = counter; j< ar.length; j++){
+            ar[j] = 0;
+        }
+        System.out.println(Arrays.toString(ar));
+
+
     }
 }
-//-------------------------------MyApproach-------------------------------------------------------------
+
