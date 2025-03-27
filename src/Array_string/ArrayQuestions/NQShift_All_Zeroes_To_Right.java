@@ -34,22 +34,23 @@ public class NQShift_All_Zeroes_To_Right {
             ar[j] = 0;
         }
         System.out.println(Arrays.toString(ar));
-          int [] arr2 = {0,1,0,4,5,2,0,4,8,0,0,1,0};
-        int j =0;
-        for(int i = 0; i<arr2.length; i++){
-            if(arr2[i]!=0 && arr2[j]==0){
-                //swap
-                int temp = arr[j];
-                arr2[j] = arr2[i];
-                arr2[i] = temp;
 
+        //------------Instructor's approach (this is two pointer approach)--------------------------
+        int j = 0;
+        int[] arrr = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 9};
+        for (int i = 0; i < arrr.length; i++) {
+            if (arrr[i] != 0 && arrr[j] == 0) {
+                //swapping
+                int temp = arrr[j];
+                arrr[j] = arrr[i];
+                arrr[i] = temp;
+              //swapping
             }
-            if(arr2[j]!= 0)
-            {
+            if (arrr[j] != 0) {
                 j++;
             }
         }
-        System.out.println(Arrays.toString(arr2));
+        System.out.println(Arrays.toString(arrr));
 
     }
 }
