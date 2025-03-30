@@ -2,7 +2,7 @@ package Array_string.ArrayQuestions;
 
 import java.util.Arrays;
 
-public class NQShift_All_Zeroes_To_Right {
+public class MQShift_All_Zeroes_To_Right {
     public static void main(String[] args) {
         int[] arr = {0, 0, 1, 0, 3, 0, 2, 2, 3, 0, 10};
         //--ThisIsMyApproach--IThoughtDeeplyandAppliedMyOwnLogic--ThoughNotOptimizedApproach--WillSeeFurtherForMoreSolutionWIthOptimizedApproach----------------

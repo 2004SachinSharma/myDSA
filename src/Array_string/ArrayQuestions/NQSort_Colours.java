@@ -2,7 +2,7 @@ package Array_string.ArrayQuestions;
 
 import java.util.Arrays;
 
-public class OQSort_Colours {
+public class NQSort_Colours {
     public static void main(String[] args) {
         // source: Leet-Code, medium-level Question
         //Here 0 represents red, 1 represents white and 2 represents blue

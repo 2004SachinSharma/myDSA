@@ -2,7 +2,7 @@ package Array_string.ArrayQuestions;
 
 import java.util.Arrays;
 
-public class PQShift_All_Negatives_To_OneSide {
+public class OQShift_All_Negatives_To_OneSide {
     public static void main(String[] args) {
         int [] arr =  {1, 2, -3, -4, 5, -6};
 

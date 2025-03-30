@@ -4,7 +4,7 @@ public class HQSecondMin_and_SecondMax3 {
     public static void main(String[] args) {
 
 
-        int arr[] = {4,7};
+        int arr[] = {4,7,8,1,9,1000};
 
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;
