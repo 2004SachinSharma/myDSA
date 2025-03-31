@@ -1,24 +1,36 @@
 package Array_string.ArrayQuestions;
 
+import java.util.Arrays;
+
 public class CQReverse_anArray3 {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
-      //  int[] arr1 = new int[arr.length];
+        int[] arr1 = {1, 2, 3, 4, 5};
+        int[] arr2 = {1, 2, 3, 4, 5};
         int j = 0;
 
-        for (int i = arr.length - 1; i >= 0; i--) {
+        for (int i = arr.length-1; i >= 0; i--) {
 
             System.out.print(arr[i]+" ");
 
-            // Another approach : below num2 variable can be removed if I use out of class present below commented out code just after the for - loop
-            // at line 24 to 28
+        }
+        //Optimized approach
+        System.out.println("sasa");
 
-
-            //  System.out.printf("The index of array 1 is %d and value is  %d : ", i, num);
-
+        for( int i = 0; i < arr1.length/2; i++ ) {
+            int temp = arr1[i];
+            arr1[i] = arr1[(arr1.length-1) -i];
+            arr1[(arr1.length-1) -i] = temp;
 
         }
-           // other very easy approach
+        System.out.println(Arrays.toString(arr1));
+
+        perf: Optimal Array Reversal with Least Complexity
+
+        - Implemented the **most efficient array reversal** using half traversal.
+        - Achieved **O(n)** time complexity with only **n/2 iterations**, minimizing operations.
+                - Utilized **in-place swapping (O(1) space)**, avoiding extra memory usage.
+                - This solution offers **the least complexity** for array reversal, making it ideal for large datasets.
 
 
 
@@ -26,18 +38,4 @@ public class CQReverse_anArray3 {
 
 
 }
-// Another approach:
-/*
-        for ( int arrr : arr1){
-            System.out.print(arrr+" ");
 
-        }
-
-
-        System.out.println("");
-  for ( int arrr : arr){
-            System.out.print(arrr+" ");
-        }
-
-
-*/
