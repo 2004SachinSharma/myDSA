@@ -14,7 +14,7 @@ public class CQReverse_anArray3 {
             System.out.print(arr[i]+" ");
 
         }
-        //Optimized approach
+        //Optimized approach and the most efficient solution for this problem ! 
         System.out.println("sasa");
 
         for( int i = 0; i < arr1.length/2; i++ ) {
@@ -24,15 +24,6 @@ public class CQReverse_anArray3 {
 
         }
         System.out.println(Arrays.toString(arr1));
-
-        perf: Optimal Array Reversal with Least Complexity
-
-        - Implemented the **most efficient array reversal** using half traversal.
-        - Achieved **O(n)** time complexity with only **n/2 iterations**, minimizing operations.
-                - Utilized **in-place swapping (O(1) space)**, avoiding extra memory usage.
-                - This solution offers **the least complexity** for array reversal, making it ideal for large datasets.
-
-
 
     }
 
