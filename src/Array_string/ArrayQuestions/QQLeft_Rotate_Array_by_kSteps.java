@@ -1,10 +1,12 @@
 package Array_string.ArrayQuestions;
 
-import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.util.Arrays;
 
 public class QQLeft_Rotate_Array_by_kSteps {
     static void leftRotate(int[] arr, int k) {
+        if(k <0){
+            k = k + arr.length;
+        }
 
         for (int i = 0; i < k; i++) {
             int temp = arr[0];
@@ -20,6 +22,9 @@ public class QQLeft_Rotate_Array_by_kSteps {
     }
 
     static void rightRotate(int[] arr, int k) {
+        if(k <0){
+            k = k + arr.length;
+        }
 
         for (int i = 0; i < k; i++) {
             int temp = arr[arr.length - 1];
@@ -35,7 +40,7 @@ public class QQLeft_Rotate_Array_by_kSteps {
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         int[] arr1 = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         int[] arr2 = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        int k = 13 % arr.length;
+        int k = -3 % arr.length; //Here this expression would get us the left and right rotation , like on +Ve the left rotation will happen and vice versa
         System.out.println("Original Array 1 : " + Arrays.toString(arr));
 
         QQLeft_Rotate_Array_by_kSteps.leftRotate(arr, k);
@@ -45,35 +50,33 @@ public class QQLeft_Rotate_Array_by_kSteps {
 
         QQLeft_Rotate_Array_by_kSteps.rightRotate(arr1, k);
 
+      //reversal algo!
         QQLeft_Rotate_Array_by_kSteps.rotate(arr2, k);
 
 
     }
-                            // 1,2,3,4,5,6,7,8,9
 
-   static void rotate(int[] arr, int k) {
-        int key1 = k-1, key2 = k;
-        for (int i = 0; i < key1; i++) {
+    // Reversal algo., recommended algo for DSA interviews
+    static void reverse(int [] arr, int start, int end){
+
+        for(int i = start ; i < end; i++){
             int temp = arr[i];
-            arr[i] = arr[key1];
-            arr[key1] = temp;
-            key1--;
+            arr[i] = arr[end];
+            arr[end] = temp;
+            end--;
         }
 
-        for (int i = key2; i < arr.length/2; i++) {
-            int temp = arr[(arr.length -1) -i];
-            arr[(arr.length - 1 )- i] = arr[i];
-            arr[i] = temp;
-
-        }
-       for(int i = 0; i<arr.length; i++){
-           int temp = arr[(arr.length - 1) - i];
-           arr[(arr.length - 1 )- i] = arr[i];
-           arr[i] = temp;
-
+    }
+   static void rotate(int[] arr, int k) {
+        if(k <0){
+           k = k + arr.length;
        }
+       reverse(arr, 0, k-1);
+       reverse(arr, k, arr.length-1);
+       reverse(arr, 0, arr.length-1);
 
-        System.out.println(Arrays.toString(arr));
+       System.out.println(Arrays.toString(arr));
+
     }
 }
 
