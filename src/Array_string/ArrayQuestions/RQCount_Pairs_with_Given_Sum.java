@@ -17,12 +17,6 @@ public class RQCount_Pairs_with_Given_Sum {
         // This Approach is Brute-force approach , it works correctly with time complexity of O(n log n)
         // and space complexity of O(1) ,
         // This approach can be more efficient,by using two pointer approach , and Hashmaps...
-        feat: Implement brute-force approach to count pairs with given sum
 
-        Added a brute-force approach with O(n²) time complexity and O(1) space complexity
-
-        Prints all valid pairs that sum up to k
-
-        Can be optimized further using the two-pointer technique or hashmap-based approach for better efficiency
-    }
+            }
 }
