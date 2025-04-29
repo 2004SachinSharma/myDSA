@@ -29,7 +29,7 @@ public class HQSecondMin_and_SecondMax3 {
         if (s_max == Integer.MAX_VALUE) { // means if no second maximum is there
             System.out.println("-1");
         } else {
-            System.out.println("second minimum is " + s_max);
+            System.out.println("second maximum is " + s_max);
         }
 
         for (int data : arr) {
